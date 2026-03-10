@@ -21,3 +21,10 @@ Notebook Reference: 1.1_foundational_models.ipynb
     - `timeout`: Maximum time (in seconds) to wait for a response before cancelling the request.
     - `max_retries`: Maximum number of retry attempts for failed requests.
 - List of [Chat Model Integrations](https://docs.langchain.com/oss/python/integrations/chat)
+
+Notebook Reference: 1.1_prompting.ipynb
+
+- How can we begin tailoring(Agent) it towards your specific use case? - By using system prompts - we can customize the performance of a chat model
+- System prompts are instructions or guidelines provided to a language model to influence its behavior and responses. They can be used to set the context, define the tone, or specify the format of the output.
+- Prompt engineering is the process of designing and refining prompts to achieve desired outputs from language models. It involves crafting effective instructions and examples to guide the model's responses.
+- Rather than providing the structure to the model within the prompt. we can actually provide it an `output schema`(Using Pydantic - `Base Model`) - pass it to the response_format of create_agent - which will fill out for us by the LLM.
