@@ -28,3 +28,13 @@ Notebook Reference: 1.1_prompting.ipynb
 - System prompts are instructions or guidelines provided to a language model to influence its behavior and responses. They can be used to set the context, define the tone, or specify the format of the output.
 - Prompt engineering is the process of designing and refining prompts to achieve desired outputs from language models. It involves crafting effective instructions and examples to guide the model's responses.
 - Rather than providing the structure to the model within the prompt. we can actually provide it an `output schema`(Using Pydantic - `Base Model`) - pass it to the response_format of create_agent - which will fill out for us by the LLM.
+
+### Lesson 2: Tools
+
+Notebook Reference: 1.2_tools.ipynb
+
+- what seperates the agents from the standard chatbot is it's ability to take actions, perceive the output of those actions, and react accordingly.
+- The actions that an agent can take are defined by the tools that we provide it.Tools can allow our agent to access data, execute tasks, even call our agents.
+- [Tools](https://docs.langchain.com/oss/python/langchain/tools) are external functions or APIs that an agent can call to perform specific tasks or retrieve information. They allow the agent to interact with the outside world and access resources beyond its own capabilities.
+
+Notebook Reference: 1.2_web_search.ipynb
