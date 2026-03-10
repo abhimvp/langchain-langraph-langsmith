@@ -24,3 +24,6 @@ This section of the Foundations course is focused on building a strong understan
 ## Resources
 
 - Downloaded this Repo - [lca-lc-foundations](https://github.com/langchain-ai/lca-lc-foundations.git)
+- Get the OPENAI API Key from [this link](https://platform.openai.com/api-keys)
+- Get the Tavily API Key from [this link](https://app.tavily.com/home)
+- Get the Google API Key from [this link](https://aistudio.google.com/app/api-keys)
