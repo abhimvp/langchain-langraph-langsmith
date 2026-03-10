@@ -38,3 +38,5 @@ Notebook Reference: 1.2_tools.ipynb
 - [Tools](https://docs.langchain.com/oss/python/langchain/tools) are external functions or APIs that an agent can call to perform specific tasks or retrieve information. They allow the agent to interact with the outside world and access resources beyond its own capabilities.
 
 Notebook Reference: 1.2_web_search.ipynb
+
+- Add a web search tool
