@@ -94,3 +94,7 @@ Notebook Reference: 1.4_multimodal_messages.ipynb
 - First things first, we'll be encoding our image and audio files in base64.
 - About [multimodal](https://docs.langchain.com/oss/python/langchain/messages#multimodal).
 - We can also provide the model with a `multimodal output schema` - which is a pydantic model that specifies the expected format of the output, including any multimodal components. The model will then generate responses that conform to this schema, allowing us to easily parse and utilize the multimodal data in our applications.
+
+### Lesson 5: Personal Chef(Project)
+
+Notebook Reference: 1.5_personal_chef.ipynb
