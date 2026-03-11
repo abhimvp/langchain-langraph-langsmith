@@ -126,3 +126,10 @@ Notebook Reference: 2.2_state.ipynb
 - instead it's passed to the tool cause in an object called tool runtime. [More About it](https://docs.langchain.com/oss/python/langchain/tools#access-context)
 - we therefore need to make a tool call for our agent to be able to access that information
 - context is immutable - means the agent can't update or change itself - may the agent needs to learn what language and where i'm fom during conversation itself - then we can do that using [AGENTS STATE](https://docs.langchain.com/oss/python/langchain/tools#short-term-memory-state).
+
+### Lesson 3: Multi-Agent Systems
+
+Notebook Reference: 2.3_multi_agent.ipynb
+
+- About [Multi-agent in langchain](https://docs.langchain.com/oss/python/langchain/multi-agent/index)
+- A main agent coordinates subagents as tools. All routing passes through the main agent.

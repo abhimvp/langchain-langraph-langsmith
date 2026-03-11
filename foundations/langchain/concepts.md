@@ -17,3 +17,4 @@ This file is your personal glossary for LangChain. As you encounter new terms an
   - A `thread` organizes multiple interactions in a session, similar to the way email groups messages in a single conversation.
   - A `conversation` is a single interaction between a user and an agent, consisting of a prompt and a response. A thread can contain multiple conversations, allowing for a more complex and dynamic interaction.
 - [Model Context Protocol](https://docs.langchain.com/oss/python/langchain/mcp) (MCP) is an open protocol that standardizes how applications provide tools and context to LLMs. LangChain agents can use tools defined on MCP servers using the langchain-mcp-adapters library.
+- Multi-agent systems coordinate specialized components to tackle complex workflows.
