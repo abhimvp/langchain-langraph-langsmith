@@ -40,3 +40,46 @@ Notebook Reference: 1.2_tools.ipynb
 Notebook Reference: 1.2_web_search.ipynb
 
 - Add a web search tool
+
+### Lesson 3: Short-Term memory
+
+Notebook Reference: 1.3_memory.ipynb
+
+- A pretty basic feature we've come to expect from any chatbot we've ever interacted with is it's ability to maintain memory over the lenght of a conversation.
+- Short term memory allows our agent to remember previous interactions within a single thread or conversation. This can be crucial for maintaining context and providing more coherent and relevant responses.
+- With our langchain agent, we're tracking messages in STATE, which you can think of as the memory of our agent.The problem is the STATE isn't being saved from one run to another, so in effect, our agent's memory is being wiped.
+  - We need to somehow save our STATE that the agent can remember previous messages. We do that by using what's a called a `Check Pointer` - [About it](https://docs.langchain.com/oss/python/langchain/short-term-memory#usage).
+  - To add short-term memory (thread-level persistence) to an agent, you need to specify a `checkpointer` when `creating` an `agent`.
+  - checkpointer saves a snapshot of the state at the end of each run, and then groups it would utter runs with the same `thread id`.
+  - The checkpointer we use is imported from langGraph library - called InMemorySaver , we initialize our agent with it. see the code example below.
+
+```py
+# LangChain’s agent manages short-term memory as a part of your agent’s state.
+
+# By storing these in the graph’s state, the agent can access the full context for a given conversation while maintaining separation between different threads.
+
+# State is persisted to a database (or memory) using a checkpointer so the thread can be resumed at any time.
+
+# Short-term memory updates when the agent is invoked or a step (like a tool call) is completed, and the state is read at the start of each step.
+
+from langchain.agents import create_agent
+from langgraph.checkpoint.memory import InMemorySaver
+
+
+agent = create_agent(
+    "gpt-5",
+    tools=[get_user_info],
+    checkpointer=InMemorySaver(),
+)
+
+agent.invoke(
+    {"messages": [{"role": "user", "content": "Hi! My name is Bob."}]},
+    {"configurable": {"thread_id": "1"}},
+)
+```
+
+- We define our `thread ID` so that we group these checkpoints of our state together.
+- **Now invoke the agent using this common thread id** - it retains the memory of our previous conversation and appended it to it's list of messages. So we now have an agent with memory.
+- **In [production](https://docs.langchain.com/oss/python/langchain/short-term-memory#in-production), use a checkpointer backed by a database** - `pip install langgraph-checkpoint-postgres`
+
+- The documentation all the different ways to manage memory and provide/make the context neccessary available to LLM - we need to figure out which needs to be used depending on our use-case.
