@@ -115,3 +115,4 @@ Notebook Reference: 2.1_mcp.ipynb
 - **Build our Own MCP Server from scratch** - `module-2/resources/2.1_mcp_server.py` -
 - MCP Servers - 3rd party - [ones](https://mcp.so/servers)
 - we have seen how we can connect 3rd party mcp servers and access it's tool and query our questions.
+- travel agent mcp & also understand the mcp [transports](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports) & [refer this](https://docs.langchain.com/oss/python/langchain/mcp#transports)
