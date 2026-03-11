@@ -163,3 +163,10 @@ Notebook Reference: 3.2_managing_messages.ipynb
 
 - sometimes we may have long conversations - but it gets costly if we have checkpointer which stores all the conversation history and that won't go well for long conversations - that's where middleware comes in to summarize the conversation or by trimming or deleting the oldest messages - save the context window size
 - we can build [custom middleware](https://docs.langchain.com/oss/python/langchain/middleware/custom) - by implementing hooks that runs at specific points in the agent execution flow.
+
+### Lesson 3: Human In The Loop
+
+Notebook Reference: 3.3_hitl.ipynb
+
+- The [Human-in-the-Loop](https://docs.langchain.com/oss/python/langchain/human-in-the-loop) (HITL) middleware lets you add human oversight to agent tool calls. When a model proposes an action that might require review—for example, writing to a file or executing SQL—the middleware can pause execution and wait for a decision.
+- To use HITL, add the middleware to the agent’s middleware list when creating the agent.
