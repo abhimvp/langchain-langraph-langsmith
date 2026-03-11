@@ -116,3 +116,13 @@ Notebook Reference: 2.1_mcp.ipynb
 - MCP Servers - 3rd party - [ones](https://mcp.so/servers)
 - we have seen how we can connect 3rd party mcp servers and access it's tool and query our questions.
 - travel agent mcp & also understand the mcp [transports](https://modelcontextprotocol.io/specification/2025-11-25/basic/transports) & [refer this](https://docs.langchain.com/oss/python/langchain/mcp#transports)
+
+### Lesson 2: Context and State
+
+Notebook Reference: 2.2_runtime_context.ipynb
+Notebook Reference: 2.2_state.ipynb
+
+- we can create a context schema to fill in and pass to the agent, which the agent can draw from to inform it's actions - but the context can't be passed to the model directly
+- instead it's passed to the tool cause in an object called tool runtime. [More About it](https://docs.langchain.com/oss/python/langchain/tools#access-context)
+- we therefore need to make a tool call for our agent to be able to access that information
+- context is immutable - means the agent can't update or change itself - may the agent needs to learn what language and where i'm fom during conversation itself - then we can do that using [AGENTS STATE](https://docs.langchain.com/oss/python/langchain/tools#short-term-memory-state).
