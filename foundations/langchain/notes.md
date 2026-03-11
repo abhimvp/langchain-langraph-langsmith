@@ -170,3 +170,9 @@ Notebook Reference: 3.3_hitl.ipynb
 
 - The [Human-in-the-Loop](https://docs.langchain.com/oss/python/langchain/human-in-the-loop) (HITL) middleware lets you add human oversight to agent tool calls. When a model proposes an action that might require review—for example, writing to a file or executing SQL—the middleware can pause execution and wait for a decision.
 - To use HITL, add the middleware to the agent’s middleware list when creating the agent.
+
+### Lesson 4: Dynamic Agents
+
+Notebook Reference: 3.4_dynamic_prompts.ipynb
+Notebook Reference: 3.4_dynamic_tools.ipynb
+Notebook Reference: 3.4_dynamic_models.ipynb
