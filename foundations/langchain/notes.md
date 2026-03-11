@@ -133,3 +133,7 @@ Notebook Reference: 2.3_multi_agent.ipynb
 
 - About [Multi-agent in langchain](https://docs.langchain.com/oss/python/langchain/multi-agent/index)
 - A main agent coordinates subagents as tools. All routing passes through the main agent.
+
+### Lesson 4: Wedding Planner(Project)
+
+Notebook Reference: 2.4_wedding_planners.ipynb
