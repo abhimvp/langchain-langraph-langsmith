@@ -83,3 +83,14 @@ agent.invoke(
 - **In [production](https://docs.langchain.com/oss/python/langchain/short-term-memory#in-production), use a checkpointer backed by a database** - `pip install langgraph-checkpoint-postgres`
 
 - The documentation all the different ways to manage memory and provide/make the context neccessary available to LLM - we need to figure out which needs to be used depending on our use-case.
+
+### Lesson 4: Multimodal Messages
+
+Notebook Reference: 1.4_multimodal_messages.ipynb
+
+- These days the LLMs doesn't take inputs only from text but also from other models which can take inputs and providing outputs in image, audio or video formats.
+- In this lesson, we'll explore how to provide image and audio input to our agents - so they can see and hear the world around them.
+- [choosing a model](https://developers.openai.com/api/docs/models)
+- First things first, we'll be encoding our image and audio files in base64.
+- About [multimodal](https://docs.langchain.com/oss/python/langchain/messages#multimodal).
+- We can also provide the model with a `multimodal output schema` - which is a pydantic model that specifies the expected format of the output, including any multimodal components. The model will then generate responses that conform to this schema, allowing us to easily parse and utilize the multimodal data in our applications.
