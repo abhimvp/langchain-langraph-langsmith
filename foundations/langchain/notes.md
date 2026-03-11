@@ -156,3 +156,10 @@ Notebook Reference: 2.4_wedding_planners.ipynb
   - Transforming prompts, tool selection, and output formatting.
   - Adding retries, fallbacks, and early termination logic.
   - Applying rate limits, guardrails, and PII detection.
+
+### Lesson 2: Managing Long Conversations
+
+Notebook Reference: 3.2_managing_messages.ipynb
+
+- sometimes we may have long conversations - but it gets costly if we have checkpointer which stores all the conversation history and that won't go well for long conversations - that's where middleware comes in to summarize the conversation or by trimming or deleting the oldest messages - save the context window size
+- we can build [custom middleware](https://docs.langchain.com/oss/python/langchain/middleware/custom) - by implementing hooks that runs at specific points in the agent execution flow.
