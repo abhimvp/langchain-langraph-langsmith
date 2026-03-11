@@ -137,3 +137,22 @@ Notebook Reference: 2.3_multi_agent.ipynb
 ### Lesson 4: Wedding Planner(Project)
 
 Notebook Reference: 2.4_wedding_planners.ipynb
+
+## module - 3: Production Ready Agent
+
+- Learn about [Middleware](https://docs.langchain.com/oss/python/langchain/middleware/overview)
+- Important concepts in Modern Agent design
+- Middleware lets you intercept and customize your agent's execution at every step.
+- learn how to dynamically swap in tools, adjust prompts on the fly and even change the underlying model based on the situation your agent finds itself in.
+- learn how to summarize, compress & intelligently retain information - so agent stays coherent over hours or days of interaction without forgetting what matters.
+- human in the loop patterns - learn how to insert approval checkpoints. Where agent and human counterpart work togther seamlessly.
+- Email Assistant(Project)
+
+### Lesson 1: Middleware?
+
+- Control and customize agent execution at every step
+- Middleware provides a way to more tightly control what happens inside the agent. Middleware is useful for the following:
+  - Tracking agent behavior with logging, analytics, and debugging.
+  - Transforming prompts, tool selection, and output formatting.
+  - Adding retries, fallbacks, and early termination logic.
+  - Applying rate limits, guardrails, and PII detection.
