@@ -176,3 +176,8 @@ Notebook Reference: 3.3_hitl.ipynb
 Notebook Reference: 3.4_dynamic_prompts.ipynb
 Notebook Reference: 3.4_dynamic_tools.ipynb
 Notebook Reference: 3.4_dynamic_models.ipynb
+
+### Lesson 5: Email Assistant
+
+Notebook Reference: 3.5_email_agent.ipynb
+Python Reference: 3.5_email_agent.py
