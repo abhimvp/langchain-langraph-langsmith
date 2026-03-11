@@ -98,3 +98,20 @@ Notebook Reference: 1.4_multimodal_messages.ipynb
 ### Lesson 5: Personal Chef(Project)
 
 Notebook Reference: 1.5_personal_chef.ipynb
+
+## module - 2 : Advanced Agent
+
+- Learn About MCP, how to provide agent with runtime context and customize it's state, so it keeps track of more than just messages in memory.
+- Learn about multi-agent systems - to allow applications to handle longer and larger tasks.
+
+### Lesson 1: Model Context Protocol
+
+Notebook Reference: 2.1_mcp.ipynb
+
+- [langchain-mcp-adapters](https://github.com/langchain-ai/langchain-mcp-adapters) enables agents to use tools defined across one or more MCP servers.
+- MCP? - model context protocol - defined by Anthropic - An Open protoco that standardizes how your LLM applications connect to and work with your tools and data sources.
+- The MCP Host hosts an MCP Client, which communicates to the MCP Server. IN our case, the MCP Host is AI Agent.
+- The MCP Servers can expose `Tools`, `Resources` like read-only data or `Prompt`-Templates to the client.
+- **Build our Own MCP Server from scratch** - `module-2/resources/2.1_mcp_server.py` -
+- MCP Servers - 3rd party - [ones](https://mcp.so/servers)
+- we have seen how we can connect 3rd party mcp servers and access it's tool and query our questions.
