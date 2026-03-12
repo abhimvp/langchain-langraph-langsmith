@@ -47,3 +47,7 @@ start_game("easy")      # Valid
     - batch/abatch: Efficiently transforms multiple inputs into outputs.
     - stream/astream: Streams output from a single input as it's produced.
     - astream_log: Streams output and selected intermediate results from an input.
+
+- About [LangSmith studio](https://docs.langchain.com/langsmith/studio#local-development-server) - which helps us to visualize our graphs and see the state being transformed at each node and the state.
+  - Studio is a specialized agent IDE that enables visualization, interaction, and debugging of agentic systems that implement the Agent Server API protocol.
+- Did run our simple_graph in Langsmith Studio - Go to studio folder and run `langgraph dev`

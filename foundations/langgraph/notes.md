@@ -36,3 +36,30 @@
 - _In short: nodes do the work, edges tell what to do next._
 
 - Now the graph implements [`runnable`](https://reference.langchain.com/python/langchain-core/runnables/base/Runnable) protocol - a standard way to execute langchain components. Provide different methods on how we want to run our graphs like invoke, stream ...etc
+
+### Lesson 3: LangSmith Studio
+
+- Go to module-1/studio - we have bunch of python scripts - indicates various graph we are working with in studio.
+- we can load this studio directory as a project in LangSmith Studio - To start the local development server(Studio), run the following command in your terminal in the /studio directory each module. - `langgraph dev`
+
+```bash
+(lc-foundations)
+abhis@Tinku MINGW64 ~/Desktop/langchain-langraph-langsmith/foundations/langgraph/langchain-academy-langgraph/module-1/studio (main)
+$ langgraph dev
+INFO:langgraph_api.cli:
+
+        Welcome to
+
+╦  ┌─┐┌┐┌┌─┐╔═╗┬─┐┌─┐┌─┐┬ ┬
+║  ├─┤││││ ┬║ ╦├┬┘├─┤├─┘├─┤
+╩═╝┴ ┴┘└┘└─┘╚═╝┴└─┴ ┴┴  ┴ ┴
+
+- 🚀 API: http://127.0.0.1:2024
+- 🎨 Studio UI: https://smith.langchain.com/studio/?baseUrl=http://127.0.0.1:2024
+- 📚 API Docs: http://127.0.0.1:2024/docs
+
+This in-memory server is designed for development and testing.
+For production use, please use LangSmith Deployment.
+```
+
+- we can see 3 different graphs available in our langsmith studio - which we have configured in `langgraph.json` file & picks up the env keys from .env defined in the studio folder as configured.

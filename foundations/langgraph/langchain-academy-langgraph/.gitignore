@@ -5,6 +5,10 @@
 # Venv
 langgraph-foundations/
 
+# ignore studio files
+.langgraph_api/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
