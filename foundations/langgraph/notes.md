@@ -88,3 +88,9 @@ Notebook reference: chain.ipynb
 Notebook reference: router.ipynb
 
 - Now we will add a node that will call our tool & add a conditional edge that lets you look at chat model output and make a decision - route to [tool node](https://reference.langchain.com/python/langgraph/agents) or end it.
+
+### Lesson 6 : Agent
+
+Notebook reference: agent.ipynb
+
+- Self explanatory
