@@ -82,3 +82,9 @@ Notebook reference: chain.ipynb
   - we can create a function for our model to call as tool and then give it to the chat model with the use of `bind_tools` and pass that function to it.Now the llm has access to awareness of that function.
 - Now we want to append the output of chat model to the state, so it preserves a full history of conversation.This motivated the idea of reducer functions.
 - when we define our state and LangGraph, we have single key messages and we can actually Annotate it with what we call reducer function, which tells langgraph to actually append to this messages list, when it receives a new message.
+
+### Lesson 5: Router
+
+Notebook reference: router.ipynb
+
+- Now we will add a node that will call our tool & add a conditional edge that lets you look at chat model output and make a decision - route to [tool node](https://reference.langchain.com/python/langgraph/agents) or end it.
