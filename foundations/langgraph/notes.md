@@ -94,3 +94,7 @@ Notebook reference: router.ipynb
 Notebook reference: agent.ipynb
 
 - Self explanatory
+
+### Lesson 7: Agent with Memory
+
+Notebook reference: agent-memory.ipynb
