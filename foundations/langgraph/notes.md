@@ -63,3 +63,22 @@ For production use, please use LangSmith Deployment.
 ```
 
 - we can see 3 different graphs available in our langsmith studio - which we have configured in `langgraph.json` file & picks up the env keys from .env defined in the studio folder as configured.
+
+### Lesson 4: Chain
+
+Notebook reference: chain.ipynb
+
+- let's build chains - which combines few more concepts - `chat messages` - `chat models` - `binding tools to our LLM` and `executing tool calls` all in LangGraph.
+- `Messages`:
+  - chat models interact with [messages](https://docs.langchain.com/oss/python/langchain/messages#basic-usage).
+  - Langchain supports various types of messages.
+    - HumanMessage : message from the user
+    - AIMessage : message from the chat model
+    - SystemMessage : message for the chat model to instruct behavior
+    - ToolMessage : message from a Tool call.
+- we can create a list of messages and pass it to the chat model & get an AI Message back out with some content and response metadata.
+- `Tools`:
+  - which are needed whenever you want a model to control parts of your code or call out to external API's.
+  - we can create a function for our model to call as tool and then give it to the chat model with the use of `bind_tools` and pass that function to it.Now the llm has access to awareness of that function.
+- Now we want to append the output of chat model to the state, so it preserves a full history of conversation.This motivated the idea of reducer functions.
+- when we define our state and LangGraph, we have single key messages and we can actually Annotate it with what we call reducer function, which tells langgraph to actually append to this messages list, when it receives a new message.
