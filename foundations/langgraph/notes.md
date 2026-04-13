@@ -98,3 +98,23 @@ Notebook reference: agent.ipynb
 ### Lesson 7: Agent with Memory
 
 Notebook reference: agent-memory.ipynb
+
+## Module - 2: State and Memory
+
+Memory is a central component in building agentic applications with a high-quality user experience. End users expect agents to remember previous interactions in order to be effective.
+
+- langgraph gives a lot of control over memory in your application.
+- explore the concept of memory and see how to add persistence to your graph.
+- also the message history can be long, resulting in very high token usage.
+- see how we can manage message history to mitigate this problem includes filtering, trimming, summarization to condense long interactions into succinct summaries, also deal with databases for memory.
+
+- **UPTO NOW**
+
+- `act` - let the model call specific tools
+- `observe` - pass the tool output back to the model
+- `reason` - let the model reason about the tool output to decide what to do next (e.g., call another tool or just respond directly)
+- `persist state` - use an in memory checkpointer to support long-running conversations with interruptions
+
+### Lesson 1: State Schema
+
+Notebook Reference: state-schema.ipynb

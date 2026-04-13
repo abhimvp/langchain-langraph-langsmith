@@ -109,9 +109,11 @@ The `add_messages` reducer is smarter than a simple `.append()`. It checks the *
 | **Best For**            | Status flags, settings, counters | Chat history, logs, document lists |
 
 ---
-
+ 
 ### Summary for Reference
 
 > **`Annotated`** is the "metadata tag" that tells LangGraph: _"Don't just replace this variable; use this specific function (`add_messages`) to merge the update into the existing data."_
 
 Would you like me to show you how to write a **custom reducer** function if you ever need logic more specific than just adding messages?
+
+- [Use pydantic models for graph state](https://docs.langchain.com/oss/python/langgraph/use-graph-api#use-pydantic-models-for-graph-state)
