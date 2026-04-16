@@ -78,3 +78,17 @@ Quantum computers are different because they use the strange rules of the super-
     ..
 
 ```
+
+## Traces in langsmith - different views
+
+- I can see that each run is really an end-to-end execution of our application.
+
+- On the left hand side, I've what we call a run tree. At the top, I can see the latency and a detailed breakdown of token usage.
+- If I expand my left hand side view, I get a lot more detail on each step and the actions that took place within it.
+![alt text](image.png)
+- If I switch to this waterfall view, I can visualize how long each step took from start to finish, which is really nice.
+![alt text](image-1.png)
+
+- Now, you'll notice for each step or action I choose on the right hand side, I can see the input, maybe the output, some metadata tool calls, you know, even documents retrieved.
+
+So tracing allows us to observe not just the final input and output of our application, but every single step taken within it.
